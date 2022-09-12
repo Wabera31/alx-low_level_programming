@@ -1,19 +1,32 @@
-#include <studio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
 /**
- * main - Prints the alphabet.
- *
- * Return: Always 0 (Success)
+ * main - this is where the program start running
+ * Return:returns zero if error and non zero if no errors
  */
+
 int main(void)
 {
-	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
 
-	for (i = 0; i < 52; i++)
+	int alphabet, ALPHABET;
+
+	alphabet = 'a';
+
+	ALPHABET = 'A';
+
+	while (alphabet <= 'z')
 	{
-		putchar(alph[i]);
+		putchar(alphabet);
+		alphabet++;
+	}
+	while (ALPHABET <= 'Z')
+	{
+		putchar(ALPHABET);
+		ALPHABET++;
 	}
 	putchar('\n');
+
 	return (0);
 }
