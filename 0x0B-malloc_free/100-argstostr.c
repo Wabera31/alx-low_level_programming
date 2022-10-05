@@ -1,12 +1,13 @@
-nclude "main.h"
+#include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * argstostr - concatenates all the arguments of a program.
  * @ac: argument count.
  * @av: argument vector.
  *
- * Return: pointer of an array of char
+ * Return: pointer of an array of char.
  */
 
 char *argstostr(int ac, char **av)
@@ -41,9 +42,9 @@ char *argstostr(int ac, char **av)
 		{
 			aout[ia] = '\n';
 			i++;
-			ia++;
 			j = 0;
 		}
+
 		if (ia < c - 1)
 			aout[ia] = av[i][j];
 	}
